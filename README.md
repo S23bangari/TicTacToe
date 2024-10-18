@@ -1,50 +1,14 @@
-# React + TypeScript + Vite
+Tic-Tac-Toe Game
+This is a simple Tic-Tac-Toe game built with React.js. The game allows two players to take turns playing as "X" and "O" on a 3x3 grid. The objective is to get three of the same symbol in a row, column, or diagonal. If all cells are filled without a winner, the game declares a draw and restarts automatically.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Two-player mode: Players alternate between "X" and "O".
+Detects a winner or a draw.
+Alerts the result (win or draw) and refreshes the game automatically.
+Simple and intuitive UI.
+How to Run
+Prerequisites
+Ensure you have the following installed on your machine:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Node.js (v14 or higher recommended)
+npm (comes with Node.js)
